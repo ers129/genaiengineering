@@ -1,3 +1,4 @@
+
 # calculator.py
 # A simple calculator with add and subtract functions
 from fastapi import FastAPI
@@ -25,7 +26,7 @@ def read_root():
 
 # Main program
 if __name__ == "__main__":
-    uvicorn.run("Calculator:app", host="0.0.0.0", port=9321, reload=True)
+    uvicorn.run(app, host="0.0.0.0", port=9321)
 
 
 '''
