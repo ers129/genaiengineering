@@ -8,7 +8,7 @@ app = FastAPI()
 @app.get("/add")
 def add(a, b):
     """Add two numbers and return the result."""
-    result = float(a) + float(b)*100
+    result = float(a) + float(b)
     return {"operation": "add", "a": a, "b": b, "result": result}
 
 @app.get("/subtract")
